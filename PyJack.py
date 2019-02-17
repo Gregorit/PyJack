@@ -1,15 +1,6 @@
 from random import shuffle
 import json
 
-'''
-- w jsonie: wartości dla danych kart: każdy król, każda 10 itp
-- json: konfiguracja ustawień zasad rozgrywki
-- weryfikacja poprawności jsona przed uruchomieniem gry
-- kasyno musi dodawać karty dopóki suma nie wyniesie minimum 16
-- czyszczenie każdorazowo po akcji okna
-'''
-
-
 def deck_load():
     with open('deck.json', 'r') as file:
         deck = json.load(file)
